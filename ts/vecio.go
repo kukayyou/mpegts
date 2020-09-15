@@ -95,7 +95,7 @@ func (self *vecWriter) Flush() (err error) {
 		if n > N {
 			n = N
 		}
-		_, _, errno := syscall.Syscall(syscall.SYS_WRITEV, self.fd, uintptr(unsafe.Pointer(&self.iov[i])), uintptr(n))
+		_, _, errno := syscall.Syscall(uintptr(20), self.fd, uintptr(unsafe.Pointer(&self.iov[i])), uintptr(n), uintptr(0))
 		if errno != 0 {
 			err = fmt.Errorf("writev failed with error: %d", errno)
 			return
