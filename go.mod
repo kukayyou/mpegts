@@ -1,4 +1,4 @@
-module ts-old
+module ts
 
 go 1.14
 
