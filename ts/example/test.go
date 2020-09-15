@@ -1,7 +1,6 @@
 package main
 
 import (
-	ts "../"
 	"bytes"
 	"encoding/gob"
 	"encoding/hex"
@@ -10,6 +9,7 @@ import (
 	"io"
 	"os"
 	"runtime/pprof"
+	"ts"
 )
 
 type GobAllSamples struct {
