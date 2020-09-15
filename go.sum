@@ -1,0 +1,4 @@
+github.com/deepch/old_bits v0.0.0-20160613011443-bacd5a88e1a1 h1:2rkhF9z5isUZVWXJj6tN3NNgGB7MZUGhvRc6quvL200=
+github.com/deepch/old_bits v0.0.0-20160613011443-bacd5a88e1a1/go.mod h1:gEmozPCk6/9qn5JGhfO7w/YRMnCoNYpQTf7I+JvN5t4=
+github.com/deepch/old_codec v0.0.0-20180218160520-de8dabf6b730 h1:GSyyX44UxTlDGLNoVTjL9TUBhmGwkEAxO+yQmMfdQCk=
+github.com/deepch/old_codec v0.0.0-20180218160520-de8dabf6b730/go.mod h1:2YKJMP2gH7xr8LQ3ef0jWzXC31xJX0pGxZPiwftdqfg=
