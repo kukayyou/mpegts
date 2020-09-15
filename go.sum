@@ -1,6 +1,10 @@
 github.com/cheekybits/genny v1.0.0/go.mod h1:+tQajlRqAUrPI7DOSpB0XAqZYtQakVtB7wXkRAgjxjQ=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/deepch/old_bits v0.0.0-20160613011443-bacd5a88e1a1 h1:2rkhF9z5isUZVWXJj6tN3NNgGB7MZUGhvRc6quvL200=
+github.com/deepch/old_bits v0.0.0-20160613011443-bacd5a88e1a1/go.mod h1:gEmozPCk6/9qn5JGhfO7w/YRMnCoNYpQTf7I+JvN5t4=
+github.com/deepch/old_codec v0.0.0-20180218160520-de8dabf6b730 h1:GSyyX44UxTlDGLNoVTjL9TUBhmGwkEAxO+yQmMfdQCk=
+github.com/deepch/old_codec v0.0.0-20180218160520-de8dabf6b730/go.mod h1:2YKJMP2gH7xr8LQ3ef0jWzXC31xJX0pGxZPiwftdqfg=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
 github.com/golang/mock v1.2.0/go.mod h1:oTYuIxOrZwtPieC+H1uAHpcLFnEyAGVDL/k47Jfbm0A=
 github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=

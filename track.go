@@ -2,7 +2,7 @@ package ts
 
 import (
 	"bytes"
-	"github.com/kukayyou/avcodec/codec/aacparser"
+	"github.com/deepch/old_codec/aacparser"
 )
 
 type Track struct {

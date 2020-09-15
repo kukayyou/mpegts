@@ -3,8 +3,8 @@ package ts
 import (
 	"bytes"
 	"fmt"
-	"github.com/kukayyou/avcodec/codec/h264parser"
-	"github.com/kukayyou/avcodec/codec/aacparser"
+	"github.com/deepch/old_codec/h264parser"
+	"github.com/deepch/old_codec/aacparser"
 	"io"
 )
 
@@ -153,7 +153,6 @@ func (self *Track) WriteSample(pts int64, dts int64, isKeyFrame bool, data []byt
 	}
 
 	if self.Type == AAC {
-
 		if !aacparser.IsADTSFrame(data) {
 			data = append(aacparser.MakeADTSHeader(self.mpeg4AudioConfig, 1024, len(data)), data...)
 		}
@@ -190,6 +189,7 @@ func (self *Track) WriteSample(pts int64, dts int64, isKeyFrame bool, data []byt
 		if isKeyFrame {
 			nalus = append([][]byte{self.SPS, self.PPS}, nalus...)
 		}
+
 		h264parser.WalkNALUsAnnexb(nalus, func(b []byte) {
 			buf.Write(b)
 		})

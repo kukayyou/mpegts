@@ -3,7 +3,7 @@ package ts
 import (
 	"bytes"
 	"fmt"
-	"github.com/kukayyou/avcodec/codec/aacparser"
+	"github.com/deepch/old_codec/aacparser"
 	"io"
 )
 
@@ -153,10 +153,10 @@ func (self *Track) appendPayload() (err error) {
 
 	if self.Type == AAC {
 		if !self.mpeg4AudioConfig.IsValid() {
-			if self.mpeg4AudioConfig, _, _, _, err = aacparser.ParseADTSHeader(self.payload); err != nil {
+			if self.mpeg4AudioConfig, _, _, _, err = aacparser.ReadADTSFrame(self.payload); err != nil {
 				return
 			}
-			//self.mpeg4AudioConfig = self.mpeg4AudioConfig
+			self.mpeg4AudioConfig = self.mpeg4AudioConfig.Complete()
 			if !self.mpeg4AudioConfig.IsValid() {
 				err = fmt.Errorf("invalid MPEG4AudioConfig")
 				return
